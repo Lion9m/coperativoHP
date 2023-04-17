@@ -12,18 +12,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'contato', 
+    path: 'contato',
     component: ContatoComponent},
   {
-    path: 'home', 
+    path: 'home',
     component: Home1Component
   },
   {
-    path: 'info', 
+    path: 'info',
     component:InfoComponent
   },
   {
-    path: 'personagens', 
+    path: 'personagens',
     component: PersonagensComponent
   }
 ];

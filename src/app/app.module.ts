@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,8 +21,8 @@ import { PersonagensComponent } from './componentes/personagens/personagens.comp
 import { ContatoComponent } from './componentes/contato/contato.component';
 import { InfoComponent } from './componentes/info/info.component';
 import { Home1Component } from './componentes/home1/home1.component';
-import { CabecalhoComponent } from './cabecalho/cabecalho.component';
-import { RodapeComponent } from './rodape/rodape.component';
+import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
+import { RodapeComponent } from './componentes/rodape/rodape.component';
 
 @NgModule({
   declarations: [
