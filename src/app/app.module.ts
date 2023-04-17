@@ -16,10 +16,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PersonagensComponent } from './personagens/personagens.component';
-import { ContatoComponent } from './contato/contato.component';
-import { InfoComponent } from './info/info.component';
-import { Home1Component } from './home1/home1.component';
+import { PersonagensComponent } from './componentes/personagens/personagens.component';
+import { ContatoComponent } from './componentes/contato/contato.component';
+import { InfoComponent } from './componentes/info/info.component';
+import { Home1Component } from './componentes/home1/home1.component';
 
 @NgModule({
   declarations: [
