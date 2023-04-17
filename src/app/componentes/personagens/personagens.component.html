@@ -1,17 +1,22 @@
-<div class="image-container">
-  <h1>Gryffindor</h1>
-  <div  *ngFor="let item of listaG$.slice(0,4);">
-    <mat-card class="example-card">
-      <img class="img" [src]="item.image">
-      <mat-card-header>
-        <mat-card-title class="nome">{{item.name}}</mat-card-title>
-        <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
+  
+  <h1 class="titulos">Gryffindor</h1>
+  <div class="image-container">
+    <div  *ngFor="let item of listaG$.slice(0,4);">
+      <mat-card class="example-card">
+        <img class="img" [src]="item.image">
+        <mat-card-header>
+          <mat-card-title class="nome">{{item.name}}</mat-card-title>
+          <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
+          <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
+          <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
   </div>
-  <h1>Slytherin</h1>
+<hr class="margem">  
+
+  <h1 class="titulos">Slytherin</h1>
+  <div class="image-container">
   <div  *ngFor="let item of listaS$.slice(0,4);">
     <mat-card class="example-card">
       <img class="img" [src]="item.image">
@@ -23,8 +28,12 @@
       </mat-card-header>
     </mat-card>
   </div>
-  <h1>Ravenclaw</h1>
-  <div  *ngFor="let item of listaR$.slice(0,4);">
+  </div>
+<hr class="margem">  
+
+  <h1 class="titulos">Ravenclaw</h1>
+  <div class="image-container">
+    <div  *ngFor="let item of listaR$.slice(0,4);">
     <mat-card class="example-card">
       <img class="img" [src]="item.image">
       <mat-card-header>
@@ -35,7 +44,11 @@
       </mat-card-header>
     </mat-card>
   </div>
-  <h1>Hufflepuff</h1>
+  </div>
+<hr class="margem">  
+
+  <h1 class="titulos">Hufflepuff</h1>
+  <div class="image-container">
   <div  *ngFor="let item of listaH$.slice(0,4);">
     <mat-card class="example-card">
       <img class="img" [src]="item.image">

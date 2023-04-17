@@ -23,9 +23,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Define o espaçamento entre as imagens */
+  margin: 3%;
 }
 
 .botao{
   flex: 1 1 auto;
   width: 100%;
+}
+
+.margem{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.titulos{
+  margin-top: 3%;
+  text-align: center;
 }
