@@ -102,3 +102,22 @@ dist
 
 # TernJS port file
 .tern-port
+*.json
+*.pack
+*.pack
+*.old
+*.pack
+*.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/index.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/1.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/0.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/index.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/1.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/0.pack
+*.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/index.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/1.pack
+.angular/cache/15.2.6/angular-webpack/c8c653a5dba3bdeb27bee853561db42c22dbcf55/0.pack
+*.pack
+*.pack
+*.pack
