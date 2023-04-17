@@ -32,16 +32,44 @@ interface Personagem{
 })
 export class PersonagensComponent {
 
-  listaPersonagens$: Personagem[]=[];
+  listaG$: Personagem[]=[];
+  listaS$: Personagem[]=[];
+  listaR$: Personagem[]=[];
+  listaH$: Personagem[]=[];
 
   async getPersonagens(){
 
-    axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters')
+    axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/gryffindor')
     .then((response)=>{
-      this.listaPersonagens$ = response.data;
+      this.listaG$ = response.data;
     }).catch((error)=>{
       console.log(error)
     })
+
+    axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/slytherin')
+    .then((response)=>{
+      this.listaS$ = response.data;
+    }).catch((error)=>{
+      console.log(error)
+    })
+
+    axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/ravenclaw')
+    .then((response)=>{
+      this.listaR$ = response.data;
+    }).catch((error)=>{
+      console.log(error)
+    })
+
+    axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/hufflepuff')
+    .then((response)=>{
+      this.listaH$ = response.data;
+    }).catch((error)=>{
+      console.log(error)
+    })
+
+
+
+
   }
 
   constructor(){
