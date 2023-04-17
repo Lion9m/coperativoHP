@@ -20,6 +20,8 @@ import { PersonagensComponent } from './componentes/personagens/personagens.comp
 import { ContatoComponent } from './componentes/contato/contato.component';
 import { InfoComponent } from './componentes/info/info.component';
 import { Home1Component } from './componentes/home1/home1.component';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { Home1Component } from './componentes/home1/home1.component';
     PersonagensComponent,
     ContatoComponent,
     InfoComponent,
-    Home1Component
+    Home1Component,
+    CabecalhoComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
