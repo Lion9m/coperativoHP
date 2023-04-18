@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import axios from 'axios';
 
-interface Personagem{
+export interface Personagem{
   id:string;
   name:string;
   alternative_names:[];
@@ -32,16 +32,22 @@ interface Personagem{
 })
 export class PersonagensComponent {
 
-  listaG$: Personagem[]=[];
-  listaS$: Personagem[]=[];
-  listaR$: Personagem[]=[];
-  listaH$: Personagem[]=[];
+  public listaG$: Personagem[]=[];
+  public listaS$: Personagem[]=[];
+  public listaR$: Personagem[]=[];
+  public listaH$: Personagem[]=[];
+
+  @Output() personagensCarregadosG = new EventEmitter<Personagem[]>();
+  @Output() personagensCarregadosS = new EventEmitter<Personagem[]>();
+  @Output() personagensCarregadosR = new EventEmitter<Personagem[]>();
+  @Output() personagensCarregadosH = new EventEmitter<Personagem[]>();
 
   async getPersonagens(){
 
     axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/gryffindor')
     .then((response)=>{
       this.listaG$ = response.data;
+      this.personagensCarregadosG.emit(response.data);
     }).catch((error)=>{
       console.log(error)
     })
@@ -49,6 +55,7 @@ export class PersonagensComponent {
     axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/slytherin')
     .then((response)=>{
       this.listaS$ = response.data;
+      this.personagensCarregadosS.emit(response.data);
     }).catch((error)=>{
       console.log(error)
     })
@@ -56,6 +63,7 @@ export class PersonagensComponent {
     axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/ravenclaw')
     .then((response)=>{
       this.listaR$ = response.data;
+      this.personagensCarregadosR.emit(response.data);
     }).catch((error)=>{
       console.log(error)
     })
@@ -63,6 +71,7 @@ export class PersonagensComponent {
     axios.get<Personagem[]>('https://hp-api.onrender.com/api/characters/house/hufflepuff')
     .then((response)=>{
       this.listaH$ = response.data;
+      this.personagensCarregadosH.emit(response.data);
     }).catch((error)=>{
       console.log(error)
     })

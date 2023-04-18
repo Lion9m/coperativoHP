@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 //Bibliotecas
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -12,6 +13,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 
 
@@ -49,9 +52,12 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
     MatTabsModule,
     MatTabsModule,
     MatToolbarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
-  providers: [],
+  providers: [
+    PersonagensComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

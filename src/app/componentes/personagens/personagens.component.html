@@ -1,7 +1,7 @@
   
   <h1 class="titulos">Gryffindor</h1>
   <div class="image-container">
-    <div  *ngFor="let item of listaG$.slice(0,4);">
+    <div *ngFor="let item of listaG$.slice(0,4);">
       <mat-card class="example-card">
         <img class="img" [src]="item.image">
         <mat-card-header>
@@ -10,6 +10,7 @@
           <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
           <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
         </mat-card-header>
+        <button mat-button>Informações</button>
       </mat-card>
     </div>
   </div>
@@ -26,6 +27,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
+      <button mat-button>Informações</button>
     </mat-card>
   </div>
   </div>
@@ -42,6 +44,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
+      <button mat-button>Informações</button>
     </mat-card>
   </div>
   </div>
@@ -58,6 +61,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
+      <button mat-button>Informações</button>
     </mat-card>
   </div>
   </div>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personagem } from '../personagens/personagens.component';
+
 
 @Component({
   selector: 'app-rodape',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class RodapeComponent {
 
+  @Input() public listaG$: Personagem[] = [];
+  @Input() public listaS$: Personagem[] = [];
+  @Input() public listaR$: Personagem[] = [];
+  @Input() public listaH$: Personagem[] = [];
+  
 }
