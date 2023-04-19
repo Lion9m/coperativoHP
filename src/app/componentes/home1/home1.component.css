@@ -1,3 +1,156 @@
-.home{
-    margin: 3%;    
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.5s ease, transform 0.2s ease-out;
+  filter: drop-shadow(0 0 1rem #7d6608) saturate(2);
+}
+
+.image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 1rem #f9d95a) saturate(2);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #a55c00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #7d6608;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #6b3e00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #8b5f00;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.casas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px auto 0;
+}
+
+.casas img {
+  max-width: 210px;
+  height: auto;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.casas img:hover {
+  transform: scale(1.2);
+  filter: saturate(2);
+}
+
+.cards {
+  margin-top: 100px;
+}
+.example-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f9d95a;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
+.example-card:hover {
+  transform: scale(1.05);
+}
+
+mat-card-content {
+  margin-left: 20px;
+}
+
+mat-card-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #a55c00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.cards p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 10px 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }

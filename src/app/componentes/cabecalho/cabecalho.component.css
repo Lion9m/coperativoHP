@@ -1,0 +1,12 @@
+mat-toolbar {
+  background-color: #7d6608;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+nav {
+  background-color: #7d660876;
+}
+
+.mat-tab-link:hover {
+  background-color: #f9d95a;
+}

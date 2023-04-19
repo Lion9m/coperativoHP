@@ -1,20 +1,19 @@
-<hr>
-<div class="margem">
-<mat-grid-list cols="2" rowHeight="30px">
-    <mat-grid-tile *ngFor="let item of listaG$ | slice:0:4;">
-      <button mat-button>{{item.name}}</button>
-    </mat-grid-tile>
-    <mat-grid-tile *ngFor="let item of listaS$ | slice:0:4;">
-      <button mat-button>{{item.name}}</button>
-    </mat-grid-tile>
-    <mat-grid-tile *ngFor="let item of listaR$ | slice:0:4;">
-      <button mat-button>{{item.name}}</button>
-    </mat-grid-tile>
-    <mat-grid-tile *ngFor="let item of listaH$ | slice:0:4;">
-      <button mat-button>{{item.name}}</button>
-    </mat-grid-tile>
-</mat-grid-list>
+<div class="rodape">
+  <hr />
+  <div class="margem">
+    <mat-grid-list cols="2" rowHeight="30px">
+      <mat-grid-tile *ngFor="let item of listaG$ | slice : 0 : 4">
+        <button mat-button>{{ item.name }}</button>
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of listaS$ | slice : 0 : 4">
+        <button mat-button>{{ item.name }}</button>
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of listaR$ | slice : 0 : 4">
+        <button mat-button>{{ item.name }}</button>
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let item of listaH$ | slice : 0 : 4">
+        <button mat-button>{{ item.name }}</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>
-<hr>
-<p class="margem">Copyright 2077 The Wizard World, All rights reserved.</p>
-<hr>
