@@ -9,15 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 export class DetalhePersonagemComponent implements OnInit {
   
   personagem: any;
-  
+
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.route.params.subscribe(params => {
-      const item = params['item'];
-      if (item) {
-        this.personagem = JSON.parse(item);
-      }
+      this.personagem = params
     });
   }
 }
