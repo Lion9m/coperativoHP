@@ -1,68 +1,98 @@
-  
-  <h1 class="titulos">Gryffindor</h1>
-  <div class="image-container">
-    <div *ngFor="let item of listaG$.slice(0,4);">
-      <mat-card class="example-card">
-        <img class="img" [src]="item.image">
-        <mat-card-header>
-          <mat-card-title class="nome">{{item.name}}</mat-card-title>
-          <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
-          <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
-          <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
-        </mat-card-header>
-        <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
-      </mat-card>
-    </div>
-  </div>
-  <hr class="margem">
-   
-
-  <h1 class="titulos">Slytherin</h1>
-  <div class="image-container">
-  <div  *ngFor="let item of listaS$.slice(0,4);">
+<h1 class="gryffindor">Gryffindor</h1>
+<div class="image-container">
+  <div *ngFor="let item of listaG$.slice(0, 4)">
     <mat-card class="example-card">
-      <img class="img" [src]="item.image">
+      <img class="img" [src]="item.image" />
       <mat-card-header>
-        <mat-card-title class="nome">{{item.name}}</mat-card-title>
-        <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
+        <mat-card-title class="nome">{{ item.name }}</mat-card-title>
+        <mat-card-subtitle
+          ><strong> Casa: {{ item.house }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Bruxo: {{ item.wizard }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Ancestrais: {{ item.ancestry }}</strong></mat-card-subtitle
+        >
       </mat-card-header>
-      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">
+        Informações
+      </button>
     </mat-card>
   </div>
-  </div>
-<hr class="margem">  
-
-  <h1 class="titulos">Ravenclaw</h1>
-  <div class="image-container">
-    <div  *ngFor="let item of listaR$.slice(0,4);">
+</div>
+<br />
+<br />
+<h1 class="slytherin">Slytherin</h1>
+<div class="image-container">
+  <div *ngFor="let item of listaS$.slice(0, 4)">
     <mat-card class="example-card">
-      <img class="img" [src]="item.image">
+      <img class="img" [src]="item.image" />
       <mat-card-header>
-        <mat-card-title class="nome">{{item.name}}</mat-card-title>
-        <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
+        <mat-card-title class="nome">{{ item.name }}</mat-card-title>
+        <mat-card-subtitle
+          ><strong> Casa: {{ item.house }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Bruxo: {{ item.wizard }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Ancestrais: {{ item.ancestry }}</strong></mat-card-subtitle
+        >
       </mat-card-header>
-      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">
+        Informações
+      </button>
     </mat-card>
   </div>
-  </div>
-<hr class="margem">  
-
-  <h1 class="titulos">Hufflepuff</h1>
-  <div class="image-container">
-  <div  *ngFor="let item of listaH$.slice(0,4);">
+</div>
+<br />
+<br />
+<h1 class="ravenclaw">Ravenclaw</h1>
+<div class="image-container">
+  <div *ngFor="let item of listaR$.slice(0, 4)">
     <mat-card class="example-card">
-      <img class="img" [src]="item.image">
+      <img class="img" [src]="item.image" />
       <mat-card-header>
-        <mat-card-title class="nome">{{item.name}}</mat-card-title>
-        <mat-card-subtitle><strong> Casa:  {{item.house}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
-        <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
+        <mat-card-title class="nome">{{ item.name }}</mat-card-title>
+        <mat-card-subtitle
+          ><strong> Casa: {{ item.house }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Bruxo: {{ item.wizard }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Ancestrais: {{ item.ancestry }}</strong></mat-card-subtitle
+        >
       </mat-card-header>
-      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">
+        Informações
+      </button>
     </mat-card>
   </div>
+</div>
+<br />
+<br />
+<h1 class="hufflepuff">Hufflepuff</h1>
+<div class="image-container">
+  <div *ngFor="let item of listaH$.slice(0, 4)">
+    <mat-card class="example-card">
+      <img class="img" [src]="item.image" />
+      <mat-card-header>
+        <mat-card-title class="nome">{{ item.name }}</mat-card-title>
+        <mat-card-subtitle
+          ><strong> Casa: {{ item.house }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Bruxo: {{ item.wizard }}</strong></mat-card-subtitle
+        >
+        <mat-card-subtitle
+          ><strong> Ancestrais: {{ item.ancestry }}</strong></mat-card-subtitle
+        >
+      </mat-card-header>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">
+        Informações
+      </button>
+    </mat-card>
   </div>
+</div>
