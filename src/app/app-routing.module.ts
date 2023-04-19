@@ -4,6 +4,7 @@ import { ContatoComponent } from './componentes/contato/contato.component';
 import { Home1Component } from './componentes/home1/home1.component';
 import { InfoComponent } from './componentes/info/info.component';
 import { PersonagensComponent } from './componentes/personagens/personagens.component';
+import { DetalhePersonagemComponent } from './componentes/detalhe-personagem/detalhe-personagem.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,12 @@ const routes: Routes = [
   {
     path: 'personagens',
     component: PersonagensComponent
+  },
+  {
+    path: 'detalhe-personagem',
+    component: DetalhePersonagemComponent  
   }
+
 ];
 
 @NgModule({

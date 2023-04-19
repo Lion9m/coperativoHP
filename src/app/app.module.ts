@@ -25,6 +25,7 @@ import { InfoComponent } from './componentes/info/info.component';
 import { Home1Component } from './componentes/home1/home1.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { DetalhePersonagemComponent } from './componentes/detalhe-personagem/detalhe-personagem.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
     InfoComponent,
     Home1Component,
     CabecalhoComponent,
-    RodapeComponent
+    RodapeComponent,
+    DetalhePersonagemComponent
   ],
   imports: [
     BrowserModule,

@@ -10,12 +10,13 @@
           <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
           <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
         </mat-card-header>
-        <button mat-button>Informações</button>
+        <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
       </mat-card>
     </div>
   </div>
-<hr class="margem">  
-
+  <hr class="margem">
+   
+<!-- 
   <h1 class="titulos">Slytherin</h1>
   <div class="image-container">
   <div  *ngFor="let item of listaS$.slice(0,4);">
@@ -64,4 +65,4 @@
       <button mat-button>Informações</button>
     </mat-card>
   </div>
-  </div>
+  </div> -->
