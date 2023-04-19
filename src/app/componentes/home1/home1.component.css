@@ -108,6 +108,7 @@
 }
 .example-card:hover {
   transform: scale(1.05);
+  filter: saturate(2);
 }
 
 mat-card-content {
