@@ -28,7 +28,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
-      <button mat-button>Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
     </mat-card>
   </div>
   </div>
@@ -45,7 +45,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
-      <button mat-button>Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
     </mat-card>
   </div>
   </div>
@@ -62,7 +62,7 @@
         <mat-card-subtitle><strong> Bruxo:  {{item.wizard}}</strong></mat-card-subtitle>
         <mat-card-subtitle><strong> Ancestrais:  {{item.ancestry}}</strong></mat-card-subtitle>
       </mat-card-header>
-      <button mat-button>Informações</button>
+      <button mat-button [routerLink]="['/detalhe-personagem', item]">Informações</button>
     </mat-card>
   </div>
   </div>
