@@ -69,10 +69,9 @@
 
 .example-card:hover {
   transform: translateY(-5px);
+  filter: drop-shadow(0 0 1rem #f9d95a);
 }
 
-.img {
-/* Estilos para a imagem */
 .img {
   width: 100%;
   height: 350px;
@@ -86,19 +85,16 @@
   filter: none;
 }
 
-/* Estilos para o nome */
 .nome {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Estilos para o subtítulo */
 .mat-card-subtitle {
   margin-top: 5px;
   font-weight: bold;
 }
 
-/* Estilos para o botão de informações */
 .mat-button {
   background-color: #007bff;
   color: #fff;
@@ -109,7 +105,6 @@
   background-color: #0056b3;
 }
 
-/* Estilos para centralizar textos */
 .mat-card-header {
   display: flex;
   flex-direction: column;
