@@ -1,4 +1,13 @@
 .margem{
-    margin: 3%;    
+    margin: 3%;
     margin-right: 40%;
+    text-decoration-color: blue;
+}
+
+p{
+  color: #f1c40e;
+}
+
+h1{
+  color:  #f1c40e;
 }

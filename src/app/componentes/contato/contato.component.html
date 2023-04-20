@@ -2,16 +2,15 @@
     <h1>Nos envie uma Mensagem</h1>
     <mat-form-field appearance="fill" class="inputs">
         <mat-label>Nome</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="nome">
     </mat-form-field>
     <mat-form-field appearance="fill" class="inputs">
         <mat-label>Email</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="email">
     </mat-form-field>
     <mat-form-field appearance="fill" class="inputs">
         <mat-label>Mensagem</mat-label>
-        <textarea matInput></textarea>
+        <textarea matInput [(ngModel)]="mensagem"></textarea>
     </mat-form-field>
-        <button mat-raised-button color="primary">Enviar</button>
+        <button mat-raised-button color="primary"  (click)="post()">Enviar</button>
 <div>
-    

@@ -1,20 +1,25 @@
-<img class="img" [src]="personagem.image">
-
-<p>Name: {{ personagem.name }}</p>
-<p>Alternate Names: {{ personagem.alternate_names }}</p>
-<p>Species: {{ personagem.species }}</p>
-<p>Gender: {{ personagem.gender }}</p>
-<p>House: {{ personagem.house }}</p>
-<p>Date of Birth: {{ personagem.dateOfBirth }}</p>
-<p>Year of Birth: {{ personagem.yearOfBirth }}</p>
-<p>Wizard: {{ personagem.wizard }}</p>
-<p>Ancestry: {{ personagem.ancestry }}</p>
-<p>Eye Colour: {{ personagem.eyeColour }}</p>
-<p>Hair Colour: {{ personagem.hairColour }}</p>
-<p>Patronus: {{ personagem.patronus }}</p>
-<p>Hogwarts Student: {{ personagem.hogwartsStudent }}</p>
-<p>Hogwarts Staff: {{ personagem.hogwartsStaff }}</p>
-<p>Actor: {{ personagem.actor }}</p>
-<p>Alternate Actors: {{ personagem.alternate_actors }}</p>
-<p>Alive: {{ personagem.alive }}</p>
-
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ personagem.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image class="img" [src]="personagem.image">
+  <mat-card-content>
+    <mat-card-subtitle>Alternate Names: {{ personagem.alternate_names }}</mat-card-subtitle>
+    <mat-card-subtitle>Species: {{ personagem.species }}</mat-card-subtitle>
+    <mat-card-subtitle>Gender: {{ personagem.gender }}</mat-card-subtitle>
+    <mat-card-subtitle>House: {{ personagem.house }}</mat-card-subtitle>
+    <mat-card-subtitle>Date of Birth: {{ personagem.dateOfBirth }}</mat-card-subtitle>
+    <mat-card-subtitle>Year of Birth: {{ personagem.yearOfBirth }}</mat-card-subtitle>
+    <mat-card-subtitle>Wizard: {{ personagem.wizard }}</mat-card-subtitle>
+    <mat-card-subtitle>Ancestry: {{ personagem.ancestry }}</mat-card-subtitle>
+    <mat-card-subtitle>Eye Colour: {{ personagem.eyeColour }}</mat-card-subtitle>
+    <mat-card-subtitle>Hair Colour: {{ personagem.hairColour }}</mat-card-subtitle>
+    <mat-card-subtitle>Patronus: {{ personagem.patronus }}</mat-card-subtitle>
+    <mat-card-subtitle>Hogwarts Student: {{ personagem.hogwartsStudent }}</mat-card-subtitle>
+    <mat-card-subtitle>Hogwarts Staff: {{ personagem.hogwartsStaff }}</mat-card-subtitle>
+    <mat-card-subtitle>Actor: {{ personagem.actor }}</mat-card-subtitle>
+    <mat-card-subtitle>Alternate Actors: {{ personagem.alternate_actors }}</mat-card-subtitle>
+    <mat-card-subtitle>Alive: {{ personagem.alive }}</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>

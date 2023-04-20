@@ -2,6 +2,9 @@
   <hr />
   <div class="margem">
     <mat-grid-list cols="2" rowHeight="30px">
+      <mat-grid-tile style="color: black;">
+        Personagens
+      </mat-grid-tile>
       <mat-grid-tile *ngFor="let item of listaG$ | slice : 0 : 4">
         <button mat-button [routerLink]="['/detalhe-personagem', item]">{{ item.name }}</button>
       </mat-grid-tile>
@@ -15,5 +18,24 @@
         <button mat-button [routerLink]="['/detalhe-personagem', item]">{{ item.name }}</button>
       </mat-grid-tile>
     </mat-grid-list>
+    <div class="margem">
+      <mat-grid-list cols="1" rowHeight="30px">
+      <mat-grid-tile style="color: black;">
+        Links
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button routerLink="">Home</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button routerLink="personagens">Personagens</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button routerLink="contato">Contato</button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-button routerLink="info">Info</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    </div>
   </div>
 </div>

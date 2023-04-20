@@ -4,3 +4,7 @@
 .rodape {
   background-color: #7d66089d;
 }
+
+.links{
+  display: flex;
+}

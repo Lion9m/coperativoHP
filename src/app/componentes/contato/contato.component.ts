@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent {
+  nome!: string;
+  email!:string;
+  mensagem!:string;
 
+  post(){
+    let formData = new FormData();
+    formData.append('nome', this.nome);
+    formData.append('email', this.email);
+    formData.append('mensagem', this.mensagem);
+
+    formData.forEach((value, key) => {
+      console.log(`${key}: ${value}`);
+    });
+  }
 }
